@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.text--primary {
+    color: #57C192;
+}
+
+.text--secondary {
+    color: #737373;
+}
+
+.button--primary {
+    background-color: #57C192;
+    color: #FFFFFF;
+}
+
+.header {
+    width: 1440px;
+    height: 777px;
+    background-color: #E9EBFF;
+}
+
+.header__navbar {
+    width: 1322px;
+    height: 91px;
+    left: 59px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: relative;
+
+    & span {
+        width: 187px;
+        height: 65px;
+        padding: 1rem 1rem;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        top: 1rem;
+        position: relative;
+    }
+
+    & nav {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        gap: 2rem;
+        width: 815px;
+        height: 58px;
+        top: 1rem;
+
+        & a {
+            color: #737373;
+        }
+
+        & div {
+            display: flex;
+            flex-direction: row;
+            gap: 45px;
+            left: 515px;
+            position: relative;
+
+            & a {
+                top: 1rem;
+                position: relative;
+                color: #57C192;
+            }
+
+            & button {
+                width: 137px;
+                height: 52px;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 22px;
+
+            }
+        }
+    }
+}
+
+.header__description {
+    display: flex;
+    flex-direction: row;
+    width: 1439pxpx;
+    height: 682px;
+    gap: 30px;
+
+}
+
+.header__description__plans {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 573px;
+    height: 386px;
+    padding: 5rem 1rem 5rem 5rem;
+
+    & h5 {
+        width: 174px;
+        height: 24px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    & h1 {
+        width: 542px;
+        height: 180px;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 80px;
+    }
+
+    & h4 {
+        width: 458px;
+        height: 60px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.description__plans__cta {
+    width: 365px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    & .cta__quato {
+        width: 193px;
+        height: 52px;
+        border-radius: 5px;
+        padding: 15px 40px;
+    }
+
+    & .cta__more {
+        width: 162px;
+        height: 52px;
+        border-radius: 5px;
+        padding: 15px 40px;
+        border: 1px solid #57C192;
+        background-color: #E9EBFF;
+    }
+}
