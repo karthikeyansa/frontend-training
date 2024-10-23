@@ -1,12 +1,21 @@
 * {
-    padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Montserrat';
+    letter-spacing: 0.2px;
 }
 
-body {
-    font-family: 'Montserrat';
+.section-wrapper {
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.theme-color {
+    background-color: #E9EBFF;
 }
 
 .text--primary {
@@ -22,134 +31,177 @@ body {
     color: #FFFFFF;
 }
 
-.header {
-    width: 1440px;
-    height: 777px;
-    background-color: #E9EBFF;
-}
-
-.header__navbar {
-    width: 1322px;
+.navigation {
     height: 91px;
-    left: 59px;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+}
+
+.company-logo {
+    display: inline-block;
+    min-width: 187px;
+    height: 58px;
+    top: 17px;
+    left: 136px;
+    padding: 13px 20px 13px 0px;
+    gap: 10px;
     position: relative;
-
-    & span {
-        width: 187px;
-        height: 65px;
-        padding: 1rem 1rem;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 32px;
-        top: 1rem;
-        position: relative;
-    }
-
-    & nav {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        align-items: center;
-        gap: 2rem;
-        width: 815px;
-        height: 58px;
-        top: 1rem;
-
-        & a {
-            color: #737373;
-        }
-
-        & div {
-            display: flex;
-            flex-direction: row;
-            gap: 45px;
-            left: 515px;
-            position: relative;
-
-            & a {
-                top: 1rem;
-                position: relative;
-                color: #57C192;
-            }
-
-            & button {
-                width: 137px;
-                height: 52px;
-                border-radius: 5px;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 22px;
-
-            }
-        }
-    }
 }
 
-.header__description {
-    display: flex;
-    flex-direction: row;
-    width: 1439pxpx;
-    height: 682px;
-    gap: 30px;
-
+.company__logo__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #252B42;
 }
 
-.header__description__plans {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.navigation__list {
+    display: inline-block;
+    list-style: none;
+    top: 16px;
+    left: 136px;
+    padding: 3px 0px 3px 0px;
+    gap: 10px;
+    position: relative;
+}
+
+.navigation__item {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navigation__item:hover,
+.navigation__item__link:focus {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.navigation__buttons {
+    display: inline-block;
+    top: 16px;
+    left: 250px;
+    position: relative;
+}
+
+.button__login {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.button__login:focus,
+.button__login:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.button__signup {
+    display: inline-block;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 25px 15px 25px;
+}
+
+.button__signup:focus,
+.button__signup:hover {
+    background-color: #398361;
+    cursor: pointer;
+}
+
+.signup__icon {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    padding: 1px 5px;
+}
+
+.hero__content {
+    height: 455px;
+}
+
+.hero__content__plans {
+    display: inline-block;
+    padding: 0px 30px 0px 148px;
     width: 573px;
-    height: 386px;
-    padding: 5rem 1rem 5rem 5rem;
-
-    & h5 {
-        width: 174px;
-        height: 24px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    & h1 {
-        width: 542px;
-        height: 180px;
-        font-weight: 700;
-        font-size: 58px;
-        line-height: 80px;
-    }
-
-    & h4 {
-        width: 458px;
-        height: 60px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-    }
+    height: 286px;
 }
 
-.description__plans__cta {
+.hero__content__plans__title {
+    width: 542px;
+    height: 160px;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.hero__content__plans__desc {
+    width: 400px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.hero__content__plans__buttons {
     width: 365px;
     height: 52px;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
+}
+
+.hero__content__plans__primary {
+    width: 193px;
+    height: 52px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px 0px 0px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #57C192;
+}
+
+.hero__content__plans__primary:focus,
+.hero__content__plans__primary:hover {
+    background-color: #398361;
+    cursor: pointer;
+}
+
+.hero__content__plans__secondary {
+    width: 162px;
+    height: 52px;
+    padding: 15px 40px 15px 40px;
     gap: 10px;
+    border-radius: 5px 0px 0px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #57C192;
+}
 
-    & .cta__quato {
-        width: 193px;
-        height: 52px;
-        border-radius: 5px;
-        padding: 15px 40px;
-    }
+.hero__content__plans__secondary:focus,
+.hero__content__plans__secondary:hover {
+    background-color: #E9EBFF;
+    cursor: pointer;
+}
 
-    & .cta__more {
-        width: 162px;
-        height: 52px;
-        border-radius: 5px;
-        padding: 15px 40px;
-        border: 1px solid #57C192;
-        background-color: #E9EBFF;
-    }
+.hero__content__figure {
+    display: inline-block;
+    width: 350px;
+    height: 550px;
+    position: relative;
+}
+
+.hero__content__image {
+    width: 100%;
+    height: auto;
 }
