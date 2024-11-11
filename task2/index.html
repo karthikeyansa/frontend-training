@@ -8,106 +8,235 @@
 </head>
 
 <body>
-    <header class="header section-wrapper theme-color">
-        <nav class="navigation section-wrapper">
-            <h3 class="company-logo">
-                <a href="#" class="company__logo__link">MedicalGenic</a>
-            </h3>
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__item__link text--secondary">Home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__item__link text--secondary">Product</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__item__link text--secondary">Pricing</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__item__link text--secondary">Contact</a></li>
-            </ul>
-            <div class="navigation__buttons">
-                <a class="button__login text--primary" href="#">Login</a>
-                <a class="button__signup button--primary" href="#">
-                    Join us
-                    <figure class="signup__icon">
-                        <img src="assets/arrowIcon.png">
-                    </figure>
-                </a>
-            </div>
-        </nav>
+    <header class="header theme-color">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="company-logo-text">MedicalGenic</a>
+                <div class="nav-items container">
+                    <a href="#" class="font-style text--secondary">Home</a>
+                    <a href="#" class="font-style text--secondary">Product</a>
+                    <a href="#" class="font-style text--secondary">Pricing</a>
+                    <a href="#" class="font-style text--secondary">Contact</a>
+                </div>
+                <div class="nav-cta-links">
+                    <a class="font-style text--primary" href="#">Login</a>
+                    <a class="cta-signup font-style button--primary" href="#">
+                        JOIN US
+                        <figure class="cta-signup__icon">
+                            <img class="icon-size" src="assets/arrowIcon.png">
+                        </figure>
+                    </a>
+                </div>
+            </nav>
+        </div>  
     </header>
-    <section class="hero__content section-wrapper theme-color">
-        <div class="hero__content__plans">
-            <h1 class="hero__content__plans__title">Meet the Best Doctors</h1>
-            <h4 class="hero__content__plans__desc text--secondary">We are always fully focused on helping your child and you</h4>
-            <div class="hero__content__plans__buttons">
-                <button class="hero__content__plans__primary button--primary">Get Quote Now</button>
-                <button class="hero__content__plans__secondary theme-color text--primary">Learn More</button>
+    <section class="hero theme-color">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="plans-title">Meet the Best Doctors</h1>
+                <p class="plans-desc text--secondary">We are always fully focused on helping your child and you</h4>
+                <div class="hero-cta-buttons">
+                    <button class="cta-primary font-style button--primary">Get Quote Now</button>
+                    <button class="cta-secondary font-style theme-color text--primary">Learn More</button>
+                </div>
             </div>
-        </div>
-        <div class="hero__content__figure">
-            <figure>
-                <img class="hero__content__image" src="./assets/none.png">
+            <figure class="hero-image"> 
+                <img src="./assets/none.png">
             </figure>
         </div>
     </section>
-    <!-- <section class="stats">
-        <div class="stats__container">
-            <div class="stats--primary">
-                <span>15K</span>
-                <p>Happy Customers</p>
+    <section class="stats container">
+        <div class="stats-box">
+            <div class="stats-content">
+                <p class="stats-count text--primary">15K</p>
+                <p class="font-style">Happy Customers</p>
             </div>
-            <div class="stats--primary">
-                <span>150K</span>
-                <p>Monthly Visitors</p>
+            <div class="stats-content">
+                <p class="stats-count text--primary">150K</p>
+                <p class="font-style">Monthly Visitors</p>
             </div>
-            <div class="stats--primary">
-                <span>15</span>
-                <p>Countries  Worldwide</p>
+            <div class="stats-content">
+                <p class="stats-count text--primary">15</p>
+                <p class="font-style">Countries  Worldwide</p>
             </div>
-            <div class="stats--primary">
-                <span>100+</span>
-                <p>Top Partners</p>
-            </div>
-        </div>
-    </section>
-    <section class="activity">
-        <div class="activity__container">
-            <h6 class="text--primary">Practice Advice</h6>
-            <h2>Our Activity</h2>
-            <p class="text--secondary">Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics</p>
-        </div>
-        <div class="activity__menus">
-            <div>
-                <img src="./assets/heartbeatIcon.png" />
-                <h5>Quick examination</h5>
-                <hr class="heading--danger">
-                <p>The gradualaccumulation of<br>information about</p>
-            </div>
-            <div>
-                <img src="./assets/onlineAppointment.png" />
-                <h5>Online Appoinment</h5>
-                <hr class="heading--danger">
-                <p>The gradualaccumulation of<br>information about</p>
-            </div>
-            <div>
-                <img src="./assets/proceduresIcon.png" />
-                <h5>Painless procedures</h5>
-                <hr class="heading--danger">
-                <p>The gradualaccumulation of<br>information about</p>
+            <div class="stats-content">
+                <p class="stats-count text--primary">100+</p>
+                <p class="font-style">Top Partners</p>
             </div>
         </div>
     </section>
-    <section class="learnmore">
-        <div class="learnmore__link">
-            <hr class="heading--danger">
-            <h2>Meet Our Experts</h2>
-            <p class="text--secondary">Problems trying to resolve the conflict between<br> 
+    <section class="activity container">
+        <div>
+            <h2 class="activity-heading">Our Activity</h2>
+            <p class="activity-desc text--secondary">Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <div class="activity-types">
+            <div class="activity-card">
+                <figure>
+                    <img class="card-icon" src="./assets/heartbeatIcon.png" />
+                </figure>
+                <p class="activity-name font-style">Quick examination</p>
+                <p class="activity-info text--secondary">The gradualaccumulation of<br>information about</p>
+            </div>
+            <div class="activity-card">
+                <figure>
+                    <img class="card-icon" src="./assets/onlineAppointment.png" />
+                </figure>
+                <p class="activity-name font-style">Online Appoinment</p>
+                <p class="activity-info text--secondary">The gradualaccumulation of<br>information about</p>
+            </div>
+            <div class="activity-card">
+                <figure>
+                    <img class="card-icon" src="./assets/proceduresIcon.png" />
+                </figure>
+                <p class="activity-name font-style">Painless procedures</p>
+                <p class="activity-info text--secondary">The gradualaccumulation of<br>information about</p>
+            </div>
+        </div>
+    </section>
+    <section class="experts container">
+        <div class="experts-desc">
+            <h3 class="experts-heading">Meet Our Experts</h3>
+            <p class="experts-info font-style text--secondary">
+                Problems trying to resolve the conflict between<br> 
                 the two major realms of Classical physics:<br>
-                Newtonian mechanics </p>
-            <div>
-                <h6 class="text--primary">Learn More</h6>
-                <img src="assets/learnmoreIcon.png" >
+                Newtonian mechanics
+            </p>
+            <div class="learn-more-link">
+                <a class="font-style text--primary" href="#">Learn More</a>
+                <figure>
+                    <img class="icon-size" src="assets/learnmoreIcon.png" >
+                </figure>
             </div>
         </div>
-        <div class="learnmore__image">
-            <img src="assets/thumb-concept-16.png" />
+        <div>
+            <figure>
+                <img src="assets/thumb-concept-16.png" />
+            </figure>
         </div>
-    </section> -->
+    </section>
+    <section class="partners container">
+        <div class="partners-row">
+            <figure>
+                <img class="partners-img" src="assets/partners/hooli.png"/>
+            </figure>
+            <figure>
+                <img class="partners-img" src="assets/partners/lyft.png"/>
+            </figure>
+            <figure>
+                <img class="partners-img" src="assets/partners/smart.png"/>
+            </figure>
+            <figure>
+                <img class="partners-img" src="assets/partners/stripe.png"/>
+            </figure>
+            <figure>
+                <img class="partners-img" src="assets/partners/aws.png"/>
+            </figure>
+            <figure>
+                <img class="partners-img" src="assets/partners/antena.png"/>
+            </figure>
+        </div>
+    </section>
+    <section class="newsletter container">
+        <div class="newsletter-content">
+            <div class="newsletter-description">
+                <p class="newsletter-heading text--primary">Newsletter</p>
+                <h4 class="newsletter-join-us">JOIN US</h4>
+                <p class="newsletter-desc text--secondary">
+                    Problems trying to resolve the conflict between <br>
+                    the two major realms of Classical physics: Newtonian mechanics
+                </p>
+            </div>
+            <div class="newsletter-subscribe">
+                <input type="email" class="newsletter-subscribe-input" placeholder="Your email"></input>
+                <button class="newsletter-subscribe-button button--primary">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-section container">
+            <div class="footer-column-info">
+                <h5 class="text--secondary">Company Info</h5>
+                <div class="footer-column-info-links">
+                    <a href="#" class="text--secondary">About Us</a>
+                    <a href="#" class="text--secondary">Carrier</a>
+                    <a href="#" class="text--secondary">We are hiring</a>
+                    <a href="#" class="text--secondary">Blog</a>
+                </div>
+            </div>
+            <div class="footer-column-info">
+                <h5 class="text--secondary">Legal</h5>
+                <div class="footer-column-info-links">
+                    <a href="#" class="text--secondary">About Us</a>
+                    <a href="#" class="text--secondary">Carrier</a>
+                    <a href="#" class="text--secondary">We are hiring</a>
+                    <a href="#" class="text--secondary">Blog</a>
+                </div>
+            </div>
+            <div class="footer-column-info">
+                <h5 class="text--secondary">Features</h5>
+                <div class="footer-column-info-links">
+                    <a href="#" class="text--secondary">Business Marketing</a>
+                    <a href="#" class="text--secondary">User Analytic</a>
+                    <a href="#" class="text--secondary">Live Chat</a>
+                    <a href="#" class="text--secondary">Unlimited Support</a>
+                </div>
+            </div>
+            <div class="footer-column-info">
+                <h5 class="text--secondary">Resources</h5>
+                <div class="footer-column-info-links">
+                    <a href="#" class="text--secondary">IOS & Android</a>
+                    <a href="#" class="text--secondary">Watch a Demo</a>
+                    <a href="#" class="text--secondary">Customers</a>
+                    <a href="#" class="text--secondary">API</a>
+                </div>
+            </div>
+            <div class="footer-column-info">
+                <h5 class="text--secondary">Get In Touch</h5>
+                <div class="footer-column-info-links">
+                    <div class="info-links">
+                        <figure>
+                            <img class="icon-size" src="assets/icons/call.png" >
+                        </figure>
+                        <a href="tel:(480) 555-0103" class="text--secondary">(480) 555-0103</a>
+                    </div>
+                    <div class="info-links">
+                        <figure>
+                            <img class="icon-size" src="assets/icons/location.png" >
+                        </figure>
+                        <a href="#" class="text--secondary">4517 Washington Ave. Manchester, <br>
+                            Kentucky 39495</a>
+                    </div>
+                    <div class="info-links">
+                        <figure>
+                            <img class="icon-size" src="assets/icons/mail.png" >
+                        </figure>
+                        <a href="mailto:debra.holt@example.com" class="text--secondary">debra.holt@example.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Made With Love By Figmaland All Right Reserved </p>
+            <div class="info-links">
+                <a href="#">
+                    <figure>
+                        <img class="icon-size" src="assets/icons/fb.png">
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img class="icon-size" src="assets/icons/insta.png">
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure>
+                        <img class="icon-size" src="assets/icons/twitter.png">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
