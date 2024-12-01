@@ -35,6 +35,12 @@
     color: #FFFFFF;
 }
 
+.font-style {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
 .header {
     position: fixed;
     left: 0;
@@ -47,12 +53,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.font-style {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
+    justify-content: space-between;
 }
 
 .company-logo-text {
@@ -249,7 +250,7 @@
 }
 
 .experts {
-    padding: 50px 0px;
+    padding: 200px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -259,7 +260,6 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 200px;
 }
 
 .experts-heading {
@@ -346,11 +346,11 @@
     background-color: #E9EBFF;
 }
 
-.newsletter-subscribe-input::placeholder{
+.newsletter-subscribe-input::placeholder {
     padding-left: 10px;
 }
 
-.newsletter-subscribe-button{
+.newsletter-subscribe-button {
     width: 117px;
     height: 58px;
     border: none;
@@ -387,4 +387,166 @@
     justify-content: space-between;
     padding: 50px 100px;
     background-color: #E9EBFF;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        cursor: pointer;
+    }
+
+    .hamburger-line {
+        background-color: black;
+        width: 50px;
+        height: 7px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 25px;
+        height: auto;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-items.active {
+        display: flex;
+        height: auto;
+    }
+
+    .nav-cta-links {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .hero-container.active {
+        margin-top: 320px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .stats-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .stats-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity {
+        padding: 50px 180px;
+    }
+
+    .activity-types {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        padding-top: 50px;
+        align-items: center;
+    }
+
+    .activity-card {
+        box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.3);
+        width: 300px;
+        padding: 50px 50px;
+    }
+
+    .experts {
+        padding: 50px 115px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .experts-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .partners {
+        padding: 50px 115px;
+    }
+
+    .partners-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 30px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .partners-img {
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .newsletter-content {
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .newsletter-subscribe-input {
+        width: 500px;
+        border: none;
+        background-color: #E9EBFF;
+    }
+
+    .footer-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 30px;
+        align-items: center;
+        justify-content: space-around;
+    }
 }

@@ -12,7 +12,12 @@
         <div class="container">
             <nav class="nav">
                 <a href="#" class="company-logo-text">MedicalGenic</a>
-                <div class="nav-items container">
+                <div class="hamburger" onclick="toogleNav()">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+                <div class="nav-items">
                     <a href="#" class="font-style text--secondary">Home</a>
                     <a href="#" class="font-style text--secondary">Product</a>
                     <a href="#" class="font-style text--secondary">Pricing</a>
@@ -28,7 +33,7 @@
                     </a>
                 </div>
             </nav>
-        </div>  
+        </div>
     </header>
     <section class="hero theme-color">
         <div class="hero-container">
@@ -40,7 +45,7 @@
                     <button class="cta-secondary font-style theme-color text--primary">Learn More</button>
                 </div>
             </div>
-            <figure class="hero-image"> 
+            <figure>
                 <img src="./assets/none.png">
             </figure>
         </div>
@@ -57,7 +62,7 @@
             </div>
             <div class="stats-content">
                 <p class="stats-count text--primary">15</p>
-                <p class="font-style">Countries  Worldwide</p>
+                <p class="font-style">Countries Worldwide</p>
             </div>
             <div class="stats-content">
                 <p class="stats-count text--primary">100+</p>
@@ -68,7 +73,8 @@
     <section class="activity container">
         <div>
             <h2 class="activity-heading">Our Activity</h2>
-            <p class="activity-desc text--secondary">Problems trying to resolve the conflict between<br>the two major realms of Classical physics: Newtonian mechanics</p>
+            <p class="activity-desc text--secondary">Problems trying to resolve the conflict between<br>the two major
+                realms of Classical physics: Newtonian mechanics</p>
         </div>
         <div class="activity-types">
             <div class="activity-card">
@@ -98,14 +104,14 @@
         <div class="experts-desc">
             <h3 class="experts-heading">Meet Our Experts</h3>
             <p class="experts-info font-style text--secondary">
-                Problems trying to resolve the conflict between<br> 
+                Problems trying to resolve the conflict between<br>
                 the two major realms of Classical physics:<br>
                 Newtonian mechanics
             </p>
             <div class="learn-more-link">
                 <a class="font-style text--primary" href="#">Learn More</a>
                 <figure>
-                    <img class="icon-size" src="assets/learnmoreIcon.png" >
+                    <img class="icon-size" src="assets/learnmoreIcon.png">
                 </figure>
             </div>
         </div>
@@ -118,22 +124,22 @@
     <section class="partners container">
         <div class="partners-row">
             <figure>
-                <img class="partners-img" src="assets/partners/hooli.png"/>
+                <img class="partners-img" src="assets/partners/hooli.png" />
             </figure>
             <figure>
-                <img class="partners-img" src="assets/partners/lyft.png"/>
+                <img class="partners-img" src="assets/partners/lyft.png" />
             </figure>
             <figure>
-                <img class="partners-img" src="assets/partners/smart.png"/>
+                <img class="partners-img" src="assets/partners/smart.png" />
             </figure>
             <figure>
-                <img class="partners-img" src="assets/partners/stripe.png"/>
+                <img class="partners-img" src="assets/partners/stripe.png" />
             </figure>
             <figure>
-                <img class="partners-img" src="assets/partners/aws.png"/>
+                <img class="partners-img" src="assets/partners/aws.png" />
             </figure>
             <figure>
-                <img class="partners-img" src="assets/partners/antena.png"/>
+                <img class="partners-img" src="assets/partners/antena.png" />
             </figure>
         </div>
     </section>
@@ -196,20 +202,20 @@
                 <div class="footer-column-info-links">
                     <div class="info-links">
                         <figure>
-                            <img class="icon-size" src="assets/icons/call.png" >
+                            <img class="icon-size" src="assets/icons/call.png">
                         </figure>
                         <a href="tel:(480) 555-0103" class="text--secondary">(480) 555-0103</a>
                     </div>
                     <div class="info-links">
                         <figure>
-                            <img class="icon-size" src="assets/icons/location.png" >
+                            <img class="icon-size" src="assets/icons/location.png">
                         </figure>
                         <a href="#" class="text--secondary">4517 Washington Ave. Manchester, <br>
                             Kentucky 39495</a>
                     </div>
                     <div class="info-links">
                         <figure>
-                            <img class="icon-size" src="assets/icons/mail.png" >
+                            <img class="icon-size" src="assets/icons/mail.png">
                         </figure>
                         <a href="mailto:debra.holt@example.com" class="text--secondary">debra.holt@example.com</a>
                     </div>
@@ -237,6 +243,19 @@
             </div>
         </div>
     </footer>
+    <script>        
+        function toogleNav() {
+            const navItems = document.querySelector('.nav-items');
+            navItems.classList.toggle('active');
+            const heroSection = document.querySelector('.hero-container');
+            heroSection.classList.toggle('active');
+        }
+        document.addEventListener("scroll", () => {
+            const navItems = document.querySelector('.nav-items');
+            if(navItems.classList.contains("active"))
+                toogleNav();
+        })
+    </script>
 </body>
 
 </html>
