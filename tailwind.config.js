@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      flexBasis: {
+        '45': '45%',
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
