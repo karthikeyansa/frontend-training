@@ -10,19 +10,19 @@
 
 <body>
     <header id="header" class="py-5 px-16 fixed top-0 left-0 right-0 z-10 bg-white">
-        <nav class="flex lg:flex-row md:flex-col gap-5 lg:items-center md:items-start justify-between">
-            <a href="#" class="flex items-center gap-3">
+        <nav class="flex flex-row lg:flex-nowrap md:flex-wrap xl:gap-5 md:gap-10 lg:items-center md:items-center justify-between">
+            <a href="#" class="w-1/2 flex items-center gap-3">
                 <span
                     class="rounded-full p-3 xl:text-3xl md:text-2xl bg-purple-500 text-white size-14 text-center font-poppins">B</span>
                 <span class="xl:text-4xl md:text-3xl font-semibold">Brooklyn</span>
             </a>
-            <button class="space-y-1 cursor-pointer lg:hidden md:block" onclick="toogleNav()">
+            <button id="hamburger-button" class="space-y-1 cursor-pointer lg:hidden md:block" onclick="toogleNav()">
                 <div class="bg-black w-12 h-2"></div>
                 <div class="bg-black w-12 h-2"></div>
                 <div class="bg-black w-12 h-2"></div>
             </button>
             <div id="nav-items"
-                class="lg:flex lg:flex-row md:flex-col items-start justify-evenly gap-6 group md:hidden">
+                class="w-1/2 lg:flex lg:flex-row md:flex-col items-start justify-evenly gap-6 group md:hidden">
                 <a href="#"
                     class="xl:text-2xl md:text-1xl font-sans font-medium border-b-2 border-transparent hover:border-purple-500 transition ease-in-out duration-300">Home</a>
                 <a href="#"
@@ -474,14 +474,26 @@
         function toogleNav() {
             const navItems = document.getElementById("nav-items");
             const navigation = document.getElementById("header");
+            const menuButton = document.getElementById("hamburger-button");
             if (navItems.classList.contains("md:flex")) {
                 navItems.classList.add("md:hidden");
                 navItems.classList.remove("md:flex");
-                navigation.classList.remove("h-full")
+                navigation.classList.remove("h-full");
+                menuButton.classList.add("space-y-1");
+                menuButton.innerHTML = `
+                <div class="bg-black w-12 h-2"></div>
+                <div class="bg-black w-12 h-2"></div>
+                <div class="bg-black w-12 h-2"></div>
+                `;
             } else {
                 navItems.classList.remove("md:hidden");
                 navItems.classList.add("md:flex");
-                navigation.classList.add("h-full")
+                navigation.classList.add("h-full");
+                menuButton.classList.remove("space-y-1");
+                menuButton.innerHTML = `
+                <div class="absolute bg-black w-12 h-2 transition-transform rotate-45 right-[70px]"></div>
+                <div class="absolute bg-black w-12 h-2 transition-transform -rotate-45 right-[70px]"></div>
+                `;
             }
         }
         document.addEventListener("scroll", () => {
