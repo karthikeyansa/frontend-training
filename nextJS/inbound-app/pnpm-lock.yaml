@@ -8,9 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@adaptavant/eds-brands':
+        specifier: ^1.3.4
+        version: 1.3.4
       '@adaptavant/eds-core':
         specifier: 1.11.0
         version: 1.11.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@3.4.17)
+      '@adaptavant/eds-fonts':
+        specifier: ^1.0.0
+        version: 1.0.0
+      '@adaptavant/eds-translations':
+        specifier: ^1.2.0
+        version: 1.2.0
       next:
         specifier: 15.1.4
         version: 15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -51,12 +60,21 @@ importers:
 
 packages:
 
+  '@adaptavant/eds-brands@1.3.4':
+    resolution: {integrity: sha512-m2T1sNFhvu/M2ElyypzZjiEYVwZXZU2HpTubh7KS2Kqqt40tZ+okMaBjVypOH6PHRSS9oMc63rVmrPAEeiEEGQ==, tarball: https://npm.pkg.github.com/download/@adaptavant/eds-brands/1.3.4/2f8758a6ab8bd8ac555e915f3a7955365820859c}
+
   '@adaptavant/eds-core@1.11.0':
     resolution: {integrity: sha512-DVJsD34Xag6TIhASc6brx+vBm1SrXLeV+YzGIXsi0cpKkXhauED8Ys5gylqRTVLx2KklCuUHH+MnrTCUBhcW9w==, tarball: https://npm.pkg.github.com/download/@adaptavant/eds-core/1.11.0/937e06ba9b951ec6acf2c06c3304efcecd3fac8c}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
       tailwindcss: ^3.3.5
+
+  '@adaptavant/eds-fonts@1.0.0':
+    resolution: {integrity: sha512-argBUNMabgxU3LUJH7eVNiQgBp3xk8TkuE+uCGFj+yoST3jR0lr28GnM1Pm5+r8cABExw7+Wg6aPgR1gd/dg+A==, tarball: https://npm.pkg.github.com/download/@adaptavant/eds-fonts/1.0.0/fea1a60e02b428b71a7033c3503fc63ad6598683}
+
+  '@adaptavant/eds-translations@1.2.0':
+    resolution: {integrity: sha512-7+O8xmhmMU1L+lYxPxIZIVxv1+oNdcRV48aTmGfeV0I1n5NL/Sxjc1pSw/dNByoinyDQZKFP7zgXwX8aB8+zmQ==, tarball: https://npm.pkg.github.com/download/@adaptavant/eds-translations/1.2.0/3f66ba5bb4f43c0f667bef5accf6f4fdcd8deadf}
 
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -1784,6 +1802,8 @@ packages:
 
 snapshots:
 
+  '@adaptavant/eds-brands@1.3.4': {}
+
   '@adaptavant/eds-core@1.11.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@3.4.17)':
     dependencies:
       '@floating-ui/react-dom': 2.1.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1802,6 +1822,10 @@ snapshots:
       react-dom: 19.0.0(react@19.0.0)
       tailwind-merge: 2.6.0
       tailwindcss: 3.4.17
+
+  '@adaptavant/eds-fonts@1.0.0': {}
+
+  '@adaptavant/eds-translations@1.2.0': {}
 
   '@alloc/quick-lru@5.2.0': {}
 
