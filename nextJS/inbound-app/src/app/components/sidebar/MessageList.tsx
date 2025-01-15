@@ -23,7 +23,7 @@ export default function MessageList({
   setReadMessages: (params: any) => void;
 }): React.JSX.Element {
   return (
-    <Box as="ul" className="mt-36">
+    <Box as="ul" className={`mt-36 ${messages.length <= 3 ? 'pb-[640px]' : ''}`}>
       {messages.map((message: MessageType) => {
         return (
           <Box
