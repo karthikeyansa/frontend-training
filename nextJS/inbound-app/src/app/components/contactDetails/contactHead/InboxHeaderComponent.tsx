@@ -12,19 +12,19 @@ import {
   Track,
 } from "@adaptavant/eds-core";
 import React from "react";
-import { HeaderComponentType } from "./Messages.types";
-import SearchComponent from "./SearchComponent";
+import { InboxHeaderComponentType } from "../../sidebar/Messages.types";
+import SearchComponent from "../../sidebar/SearchInput";
 
-export default function HeaderComponent(props: HeaderComponentType) {
+export default function InboxHeaderComponent(props: InboxHeaderComponentType) {
   return (
-    <Box className="px-5 py-4">
+    <Box className="bg-accent-tertiary fixed z-10 py-3 min-w-80 w-1/4">
       <Track className="gap-4" railEnd={<MoreIconComponent />}>
         <Heading as="h3" className="text-heading-16 pl-4">
           Inbox
         </Heading>
       </Track>
-      <AllMessagesComponent count={props.count} />
-      <SearchComponent />
+      <AllMessagesComponent {...props} />
+      <SearchComponent {...props}/>
     </Box>
   );
 }
@@ -56,10 +56,10 @@ function MoreIconComponent(): React.JSX.Element {
   );
 }
 
-function AllMessagesComponent(props: HeaderComponentType): React.JSX.Element {
+function AllMessagesComponent(props: InboxHeaderComponentType): React.JSX.Element {
   return (
     <DropdownMenu popoverMaxWidth={200}>
-      <DropdownMenuTrigger variant="neutralTertiary">{`All message (${props.count})`}</DropdownMenuTrigger>
+      <DropdownMenuTrigger variant="neutralTertiary">{`All message (${props.messages.length})`}</DropdownMenuTrigger>
       <DropdownMenuPopover>
         <DropdownMenuList>
           <DropdownMenuItem onClick={() => alert("Read Messages")}>
