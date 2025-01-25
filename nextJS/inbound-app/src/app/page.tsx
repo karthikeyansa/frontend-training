@@ -8,12 +8,11 @@ import { Box } from "@adaptavant/eds-core";
 import ContactHeader from "./components/contactDetails/contactHead/ContactHeader";
 import ContactBody from "./components/contactDetails/contactBody/ContactBody";
 import ContactFooter from "./components/contactDetails/contactBody/ContactFooter";
+import { MessageContext } from "./components/MessageContextProvider";
 
 export default function Home() {
   const [messages, setMessages] = useState<MessageType[]>([]);
-  const [selectedMessage, setSelectedMessage] = useState<MessageType | null>(
-    null
-  );
+  const [selectedMessage, setSelectedMessage] = useState<MessageType|null>(null);
   const [readMessages, setReadMessages] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [searchMessages, setSearchMessages] = useState<MessageType[]>([]);
@@ -43,29 +42,30 @@ export default function Home() {
     }
   }, [messages]);
   return (
-    <Box className="flex">
-      <Box className="border-solid border-r border-tertiary min-w-80 w-1/4">
-        <InboxHeaderComponent
-          messages={messages}
-          searchQuery={searchQuery}
-          setSearchQuery={setSearchQuery}
-          setSearchMessages={setSearchMessages}
-        />
-        <MessageList
-          messages={searchQuery ? searchMessages : messages}
-          selectedMessage={selectedMessage}
-          setSelectedMessage={setSelectedMessage}
-          readMessages={readMessages}
-          setReadMessages={setReadMessages}
-        />
-      </Box>
-      {selectedMessage && (
-        <Box className="fixed left-96 pl-10 w-3/4">
-          <ContactHeader selectedMessage={selectedMessage} />
-          <ContactBody selectedMessage={selectedMessage} />
-          <ContactFooter />
+    <MessageContext.Provider value={{
+      messages,
+      selectedMessage,
+      setSelectedMessage,
+      searchQuery,
+      setSearchQuery,
+      searchMessages,
+      setSearchMessages,
+      readMessages,
+      setReadMessages
+    }}>
+      <Box className="flex">
+        <Box className="min-w-[500px]">
+          <InboxHeaderComponent />
+          <MessageList />
         </Box>
-      )}
-    </Box>
+        {selectedMessage && (
+          <Box className="p-8 py-5 w-screen">
+            <ContactHeader />
+            <ContactBody />
+            <ContactFooter />
+          </Box>
+        )}
+      </Box>
+    </MessageContext.Provider>
   );
 }

@@ -2,8 +2,8 @@ import { Box, Button, NotesFilledIcon, ShareIcon } from "@adaptavant/eds-core";
 
 export default function ContactFooter() {
   return (
-    <Box className="fixed bottom-0 p-5 flex flex-row gap-1 justify-center items-center">
-      <Box className="w-48 flex flex-row gap-3 pl-96">
+    <Box className="fixed pl-96 bottom-5 flex gap-1">
+      <Box className="flex gap-3">
         <Button
           variant="neutralSecondary"
           iconStart={NotesFilledIcon}
@@ -13,12 +13,12 @@ export default function ContactFooter() {
         >
           Add note
         </Button>
-        <Button 
-            variant="neutralSecondary" 
-            iconStart={ShareIcon}
-            onClick={() => {
-              alert("Share");
-            }}
+        <Button
+          variant="neutralSecondary"
+          iconStart={ShareIcon}
+          onClick={() => {
+            alert("Share");
+          }}
         >
           Share
         </Button>

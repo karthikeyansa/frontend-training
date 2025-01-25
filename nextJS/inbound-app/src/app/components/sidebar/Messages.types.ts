@@ -18,8 +18,18 @@ export type MessageType = {
 }
 
 export type InboxHeaderComponentType = {
-    searchQuery: string;
     setSearchQuery: (prevState: any) => void;
     setSearchMessages: (prevState: any) => void;
-    messages: MessageType[];
+}
+
+export type MessageContextProviderTypes = {
+    messages: Array<MessageType>;
+    searchQuery: string;
+    setSearchQuery: (value: string) => void
+    searchMessages: Array<MessageType>;
+    setSearchMessages: (value: Array<MessageType>) => void,
+    selectedMessage: MessageType | null;
+    setSelectedMessage: (value: MessageType) => void,
+    readMessages: Array<string>
+    setReadMessages: (value: any) => any,
 }

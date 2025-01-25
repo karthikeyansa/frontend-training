@@ -12,19 +12,19 @@ import {
   Track,
 } from "@adaptavant/eds-core";
 import React from "react";
-import { InboxHeaderComponentType } from "../../sidebar/Messages.types";
 import SearchComponent from "../../sidebar/SearchInput";
+import { MessageContext } from "../../MessageContextProvider";
 
-export default function InboxHeaderComponent(props: InboxHeaderComponentType) {
+export default function InboxHeaderComponent() {
   return (
-    <Box className="bg-accent-tertiary fixed z-10 py-3 min-w-80 w-1/4">
+    <Box className="bg-accent-tertiary relative py-3">
       <Track className="gap-4" railEnd={<MoreIconComponent />}>
         <Heading as="h3" className="text-heading-16 pl-4">
           Inbox
         </Heading>
       </Track>
-      <AllMessagesComponent {...props} />
-      <SearchComponent {...props}/>
+      <AllMessagesComponent />
+      <SearchComponent />
     </Box>
   );
 }
@@ -56,20 +56,24 @@ function MoreIconComponent(): React.JSX.Element {
   );
 }
 
-function AllMessagesComponent(props: InboxHeaderComponentType): React.JSX.Element {
+function AllMessagesComponent(): React.JSX.Element {
   return (
-    <DropdownMenu popoverMaxWidth={200}>
-      <DropdownMenuTrigger variant="neutralTertiary">{`All message (${props.messages.length})`}</DropdownMenuTrigger>
-      <DropdownMenuPopover>
-        <DropdownMenuList>
-          <DropdownMenuItem onClick={() => alert("Read Messages")}>
-            Read Messages
-          </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => alert("Unread Messages")}>
-            Unread Messages
-          </DropdownMenuItem>
-        </DropdownMenuList>
-      </DropdownMenuPopover>
-    </DropdownMenu>
+    <MessageContext.Consumer>
+      {(messageContextValue) => (
+        <DropdownMenu popoverMaxWidth={200}>
+          <DropdownMenuTrigger variant="neutralTertiary">{`All message (${messageContextValue.messages.length})`}</DropdownMenuTrigger>
+          <DropdownMenuPopover>
+            <DropdownMenuList>
+              <DropdownMenuItem onClick={() => alert("Read Messages")}>
+                Read Messages
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => alert("Unread Messages")}>
+                Unread Messages
+              </DropdownMenuItem>
+            </DropdownMenuList>
+          </DropdownMenuPopover>
+        </DropdownMenu>
+      )}
+    </MessageContext.Consumer>
   );
 }

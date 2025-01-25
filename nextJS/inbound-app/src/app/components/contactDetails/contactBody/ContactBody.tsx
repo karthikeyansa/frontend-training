@@ -1,43 +1,41 @@
 "use client";
 import { Box, Text } from "@adaptavant/eds-core";
-import { MessageType } from "../../sidebar/Messages.types";
 import SenderReceiverDetails from "./SenderReceiverDetails";
+import { MessageContext } from "../../MessageContextProvider";
+import { useContext } from "react";
 
-export default function ContactBody({
-  selectedMessage,
-}: {
-  selectedMessage: MessageType;
-}) {
+export default function ContactBody() {
+  const messageContextValue = useContext(MessageContext);
   return (
-    <Box className="flex flex-col py-2 px-8 gap-5">
-      <SenderReceiverDetails selectedMessage={selectedMessage} />
+    <Box className="flex flex-col py-6 gap-5">
+      <SenderReceiverDetails />
       <Box>
         <Text className="text-body-12 text-secondary">Phone number</Text>
         <Text className="text-body-12 text-primary">
-          {selectedMessage.call_back_number}
+          {messageContextValue.selectedMessage?.call_back_number}
         </Text>
       </Box>
       <Box>
         <Text className="text-body-12 text-secondary">Call Type</Text>
         <Text className="text-body-12 text-primary">
-          {selectedMessage.call_type}
+          {messageContextValue.selectedMessage?.call_type}
         </Text>
       </Box>
       <Box>
         <Text className="text-body-12 text-secondary">Message</Text>
         <Text className="text-body-12 text-primary">
-          {selectedMessage.message}
+          {messageContextValue.selectedMessage?.message}
         </Text>
       </Box>
       <Box>
         <Text className="text-body-12 text-secondary">Delivered to</Text>
         <Text className="text-body-12 text-primary">
-          {selectedMessage.client_email}
+          {messageContextValue.selectedMessage?.client_email}
         </Text>
       </Box>
       <Box>
         <Text className="text-body-12 text-secondary">Message taken</Text>
-        <Text className="text-body-12 text-primary">{`${selectedMessage.answered_date} · ${selectedMessage.answered_time} ${selectedMessage.tz}`}</Text>
+        <Text className="text-body-12 text-primary">{`${messageContextValue.selectedMessage?.answered_date} · ${messageContextValue.selectedMessage?.answered_time} ${messageContextValue.selectedMessage?.tz}`}</Text>
       </Box>
     </Box>
   );

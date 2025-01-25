@@ -11,37 +11,37 @@ import {
   PhoneIcon,
   ChatIcon,
 } from "@adaptavant/eds-core";
-import { MessageType } from "../../sidebar/Messages.types";
+import { MessageContext } from "../../MessageContextProvider";
+import { useContext } from "react";
 
-export default function ContactHeader({
-  selectedMessage,
-}: {
-  selectedMessage: MessageType;
-}) {
+export default function ContactHeader() {
+  const messageContextValue = useContext(MessageContext);
   return (
-    <Box className="flex py-5 px-8">
+    <Box className="flex">
       <Track
         verticalAlign="middle"
         className="gap-1 w-3/4"
-        railStart={<Avatar name={selectedMessage.client_name} size="64" />}
+        railStart={
+          <Avatar
+            name={messageContextValue.selectedMessage?.client_name ?? ""}
+            size="64"
+          />
+        }
       >
-        <HeaderContent selectedMessage={selectedMessage} />
+        <HeaderContent />
       </Track>
       <HeaderContentOptions />
     </Box>
   );
 }
 
-function HeaderContent({
-  selectedMessage,
-}: {
-  selectedMessage: MessageType;
-}): React.JSX.Element {
+function HeaderContent(): React.JSX.Element {
+  const messageContextValue = useContext(MessageContext);
   return (
     <Box className="p-2">
       <Box className="flex flex-row gap-2">
         <Heading as="h3" className="text-heading-16 font-stronger">
-          {selectedMessage.client_name}
+          {messageContextValue.selectedMessage?.client_name}
         </Heading>
         <Tooltip content="Verify" placement="right">
           {({ triggerProps }) => (
@@ -60,15 +60,15 @@ function HeaderContent({
       </Box>
       <Box className="flex gap-1">
         <Text className="text-body-12 text-secondary">
-          {selectedMessage.state}
+          {messageContextValue.selectedMessage?.state}
         </Text>
         <Text className="text-body-12 text-secondary">·</Text>
         <Text className="text-body-12 text-secondary">
-          {selectedMessage.country}
+          {messageContextValue.selectedMessage?.country}
         </Text>
         <Text className="text-body-12 text-secondary">·</Text>
         <Text className="text-body-12 text-secondary">
-          {selectedMessage.local_time}
+          {messageContextValue.selectedMessage?.local_time}
         </Text>
       </Box>
     </Box>
