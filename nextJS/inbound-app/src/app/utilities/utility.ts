@@ -1,3 +1,3 @@
-export function getExactMessageTime(messageContent: string): string{
-    return messageContent.split(" · ")[1].replaceAll("IST", "").trim();
-};
+export function getExactMessageTime(messageContent: string): string {
+	return messageContent.split(' · ')[1].replaceAll('IST', '').trim();
+}
