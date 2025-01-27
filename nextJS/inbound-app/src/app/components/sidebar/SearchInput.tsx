@@ -17,13 +17,13 @@ export default function SearchComponent() {
               autoComplete="off"
               autoFocus={true}
               onChange={(event) => {
-                const searchInputValue = event?.target.value;
+                const searchInputValue = event?.target.value?.toLowerCase();
                 messageContextValue.setSearchQuery(searchInputValue);
                 messageContextValue.setSearchMessages(
                   messageContextValue.messages.filter((message) =>
-                    message.client_name.includes(searchInputValue) ||
-                    message.client_email.includes(searchInputValue) ||
-                    message.message.includes(searchInputValue)
+                    message.client_name.toLowerCase().includes(searchInputValue) ||
+                    message.client_email.toLowerCase().includes(searchInputValue) ||
+                    message.message.toLowerCase().includes(searchInputValue)
                   )
                 );
               }}
