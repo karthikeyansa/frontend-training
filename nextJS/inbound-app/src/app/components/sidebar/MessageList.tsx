@@ -34,29 +34,18 @@ export default function MessageList(): React.JSX.Element {
 					<Box
 						as="li"
 						onClick={() => {
-							messageContextValue.setSelectedMessage(
-								message
-							);
+							messageContextValue.setSelectedMessage(message);
 							messageContextValue.setReadMessages(
-								(
-									prevState: string[]
-								) =>
-									!prevState.includes(
-										message.id
-									)
-										? [
-												...prevState,
-												message.id,
-											]
+								(prevState: string[]) =>
+									!prevState.includes(message.id)
+										? [...prevState, message.id]
 										: prevState
 							);
 						}}
 						key={message.id}
 						className={classNames('p-3', {
 							'bg-neutral-active':
-								messageContextValue
-									.selectedMessage
-									?.id ===
+								messageContextValue.selectedMessage?.id ===
 								message.id,
 						})}
 					>
@@ -64,18 +53,11 @@ export default function MessageList(): React.JSX.Element {
 							verticalAlign="middle"
 							className="gap-1"
 							railStart={
-								<Avatar
-									name={
-										message.client_name
-									}
-									size="32"
-								/>
+								<Avatar name={message.client_name} size="32" />
 							}
 						>
 							<MessageContentComponent
-								selectedMessage={
-									message
-								}
+								selectedMessage={message}
 							/>
 						</Track>
 					</Box>
@@ -100,8 +82,9 @@ function MessageContentComponent({
 	selectedMessage: MessageType;
 }): React.JSX.Element {
 	const messageContextValue = useContext(MessageContext);
-	const isMessageRead: boolean =
-		messageContextValue.readMessages.includes(selectedMessage.id);
+	const isMessageRead: boolean = messageContextValue.readMessages.includes(
+		selectedMessage.id
+	);
 	return (
 		<Box className="p-2 cursor-pointer">
 			<Track
@@ -118,12 +101,10 @@ function MessageContentComponent({
 					className={classNames(
 						'text-heading-12',
 						{
-							'text-secondary':
-								isMessageRead,
+							'text-secondary': isMessageRead,
 						},
 						{
-							'text-primary':
-								!isMessageRead,
+							'text-primary': !isMessageRead,
 						}
 					)}
 				>
@@ -132,20 +113,14 @@ function MessageContentComponent({
 			</Track>
 			<Track
 				className="gap-2"
-				railEnd={
-					isMessageRead ? null : (
-						<RadioControlIcon size="16" />
-					)
-				}
+				railEnd={isMessageRead ? null : <RadioControlIcon size="16" />}
 			>
 				<Text
 					className={classNames(
 						'font-strong text-body-12 line-clamp-1',
 						{
-							'text-secondary':
-								isMessageRead,
-							'text-primary':
-								!isMessageRead,
+							'text-secondary': isMessageRead,
+							'text-primary': !isMessageRead,
 						}
 					)}
 				>

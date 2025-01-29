@@ -16,8 +16,7 @@ export default function SenderReceiverDetails() {
 								</Text>
 								<Text className="text-body-12 text-primary">
 									{
-										messageContextValue
-											.selectedMessage
+										messageContextValue.selectedMessage
 											?.from_number
 									}
 								</Text>
@@ -31,8 +30,7 @@ export default function SenderReceiverDetails() {
 								</Text>
 								<Text className="text-body-12 text-primary">
 									{
-										messageContextValue
-											.selectedMessage
+										messageContextValue.selectedMessage
 											?.to_number
 									}
 								</Text>

@@ -24,36 +24,24 @@ export default function SearchComponent() {
 								);
 								messageContextValue.setSearchMessages(
 									messageContextValue.messages.filter(
-										(
-											message
-										) =>
+										(message) =>
 											message.client_name
 												.toLowerCase()
-												.includes(
-													searchInputValue
-												) ||
+												.includes(searchInputValue) ||
 											message.client_email
 												.toLowerCase()
-												.includes(
-													searchInputValue
-												) ||
+												.includes(searchInputValue) ||
 											message.message
 												.toLowerCase()
-												.includes(
-													searchInputValue
-												)
+												.includes(searchInputValue)
 									)
 								);
 							}}
 							onClear={() => {
-								messageContextValue.setSearchQuery(
-									''
-								);
+								messageContextValue.setSearchQuery('');
 							}}
 							placeholder="Search"
-							value={
-								messageContextValue.searchQuery
-							}
+							value={messageContextValue.searchQuery}
 						/>
 					</Field>
 				</Box>

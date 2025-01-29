@@ -14,35 +14,19 @@ export default function ContactBody() {
 					Phone number
 				</Text>
 				<Text className="text-body-12 text-primary">
-					{
-						messageContextValue
-							.selectedMessage
-							?.call_back_number
-					}
+					{messageContextValue.selectedMessage?.call_back_number}
 				</Text>
 			</Box>
 			<Box>
-				<Text className="text-body-12 text-secondary">
-					Call Type
-				</Text>
+				<Text className="text-body-12 text-secondary">Call Type</Text>
 				<Text className="text-body-12 text-primary">
-					{
-						messageContextValue
-							.selectedMessage
-							?.call_type
-					}
+					{messageContextValue.selectedMessage?.call_type}
 				</Text>
 			</Box>
 			<Box>
-				<Text className="text-body-12 text-secondary">
-					Message
-				</Text>
+				<Text className="text-body-12 text-secondary">Message</Text>
 				<Text className="text-body-12 text-primary">
-					{
-						messageContextValue
-							.selectedMessage
-							?.message
-					}
+					{messageContextValue.selectedMessage?.message}
 				</Text>
 			</Box>
 			<Box>
@@ -50,11 +34,7 @@ export default function ContactBody() {
 					Delivered to
 				</Text>
 				<Text className="text-body-12 text-primary">
-					{
-						messageContextValue
-							.selectedMessage
-							?.client_email
-					}
+					{messageContextValue.selectedMessage?.client_email}
 				</Text>
 			</Box>
 			<Box>

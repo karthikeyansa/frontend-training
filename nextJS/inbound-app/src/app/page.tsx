@@ -12,8 +12,9 @@ import { MessageContext } from './components/MessageContextProvider';
 
 export default function Home() {
 	const [messages, setMessages] = useState<MessageType[]>([]);
-	const [selectedMessage, setSelectedMessage] =
-		useState<MessageType | null>(null);
+	const [selectedMessage, setSelectedMessage] = useState<MessageType | null>(
+		null
+	);
 	const [readMessages, setReadMessages] = useState<string[]>([]);
 	const [searchQuery, setSearchQuery] = useState<string>('');
 	const [searchMessages, setSearchMessages] = useState<MessageType[]>([]);

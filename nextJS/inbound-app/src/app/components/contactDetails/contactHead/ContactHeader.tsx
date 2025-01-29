@@ -24,9 +24,7 @@ export default function ContactHeader() {
 				railStart={
 					<Avatar
 						name={
-							messageContextValue
-								.selectedMessage
-								?.client_name ??
+							messageContextValue.selectedMessage?.client_name ??
 							''
 						}
 						size="64"
@@ -45,15 +43,8 @@ function HeaderContent(): React.JSX.Element {
 	return (
 		<Box className="p-2">
 			<Box className="flex flex-row gap-2">
-				<Heading
-					as="h3"
-					className="text-heading-16 font-stronger"
-				>
-					{
-						messageContextValue
-							.selectedMessage
-							?.client_name
-					}
+				<Heading as="h3" className="text-heading-16 font-stronger">
+					{messageContextValue.selectedMessage?.client_name}
 				</Heading>
 				<Tooltip content="Verify" placement="right">
 					{({ triggerProps }) => (
@@ -64,9 +55,7 @@ function HeaderContent(): React.JSX.Element {
 							variant="neutralSecondary"
 							{...triggerProps}
 							onClick={() => {
-								alert(
-									'Verify Contact'
-								);
+								alert('Verify Contact');
 							}}
 						/>
 					)}
@@ -74,30 +63,15 @@ function HeaderContent(): React.JSX.Element {
 			</Box>
 			<Box className="flex gap-1">
 				<Text className="text-body-12 text-secondary">
-					{
-						messageContextValue
-							.selectedMessage?.state
-					}
+					{messageContextValue.selectedMessage?.state}
 				</Text>
+				<Text className="text-body-12 text-secondary">·</Text>
 				<Text className="text-body-12 text-secondary">
-					·
+					{messageContextValue.selectedMessage?.country}
 				</Text>
+				<Text className="text-body-12 text-secondary">·</Text>
 				<Text className="text-body-12 text-secondary">
-					{
-						messageContextValue
-							.selectedMessage
-							?.country
-					}
-				</Text>
-				<Text className="text-body-12 text-secondary">
-					·
-				</Text>
-				<Text className="text-body-12 text-secondary">
-					{
-						messageContextValue
-							.selectedMessage
-							?.local_time
-					}
+					{messageContextValue.selectedMessage?.local_time}
 				</Text>
 			</Box>
 		</Box>

@@ -18,14 +18,8 @@ import { MessageContext } from '../../MessageContextProvider';
 export default function InboxHeaderComponent() {
 	return (
 		<Box className="bg-accent-tertiary relative py-3">
-			<Track
-				className="gap-4"
-				railEnd={<MoreIconComponent />}
-			>
-				<Heading
-					as="h3"
-					className="text-heading-16 pl-4"
-				>
+			<Track className="gap-4" railEnd={<MoreIconComponent />}>
+				<Heading as="h3" className="text-heading-16 pl-4">
 					Inbox
 				</Heading>
 			</Track>
@@ -37,10 +31,7 @@ export default function InboxHeaderComponent() {
 
 function MoreIconComponent(): React.JSX.Element {
 	return (
-		<DropdownMenu
-			popoverMaxWidth={200}
-			popoverPlacement="bottom-end"
-		>
+		<DropdownMenu popoverMaxWidth={200} popoverPlacement="bottom-end">
 			{({ triggerProps }) => (
 				<>
 					<IconButton
@@ -51,22 +42,10 @@ function MoreIconComponent(): React.JSX.Element {
 					/>
 					<DropdownMenuPopover>
 						<DropdownMenuList>
-							<DropdownMenuItem
-								onClick={() =>
-									alert(
-										'Archive'
-									)
-								}
-							>
+							<DropdownMenuItem onClick={() => alert('Archive')}>
 								Archive
 							</DropdownMenuItem>
-							<DropdownMenuItem
-								onClick={() =>
-									alert(
-										'Trash'
-									)
-								}
-							>
+							<DropdownMenuItem onClick={() => alert('Trash')}>
 								Trash
 							</DropdownMenuItem>
 						</DropdownMenuList>
@@ -86,20 +65,12 @@ function AllMessagesComponent(): React.JSX.Element {
 					<DropdownMenuPopover>
 						<DropdownMenuList>
 							<DropdownMenuItem
-								onClick={() =>
-									alert(
-										'Read Messages'
-									)
-								}
+								onClick={() => alert('Read Messages')}
 							>
 								Read Messages
 							</DropdownMenuItem>
 							<DropdownMenuItem
-								onClick={() =>
-									alert(
-										'Unread Messages'
-									)
-								}
+								onClick={() => alert('Unread Messages')}
 							>
 								Unread Messages
 							</DropdownMenuItem>
