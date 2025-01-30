@@ -1,18 +1,11 @@
-import { Box, Button, NotesFilledIcon, ShareIcon } from "@adaptavant/eds-core";
+import { Box, Button, ShareIcon } from "@adaptavant/eds-core";
+import AddNoteModal from "../../notes/AddNoteModal";
 
 export default function ContactFooter() {
   return (
     <Box className="fixed pl-64 bottom-5 flex gap-1">
       <Box className="flex gap-3">
-        <Button
-          variant="neutralSecondary"
-          iconStart={NotesFilledIcon}
-          onClick={() => {
-            alert("Add note");
-          }}
-        >
-          Add note
-        </Button>
+		<AddNoteModal />
         <Button
           variant="neutralSecondary"
           iconStart={ShareIcon}

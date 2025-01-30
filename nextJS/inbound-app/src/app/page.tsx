@@ -60,18 +60,18 @@ export default function Home() {
       }}
     >
       <Box className="flex">
-        <Box className="min-w-[312px] border-tertiary border-r-2">
+        <Box className="w-[312px] border-tertiary border-r-2">
           <InboxHeaderComponent />
           <MessageList />
         </Box>
         {selectedMessage && (
           <>
-            <Box className="p-8 py-5 min-w-[760px] border-tertiary border-r-2">
+            <Box className="p-8 py-5 w-[760px] border-tertiary border-r-2">
               <ContactHeader />
               <ContactBody />
               <ContactFooter />
             </Box>
-            <Box className="flex flex-col min-w-[312px]">
+            <Box className="flex flex-col w-[312px]">
               <ActivityHeader />
               {selectedMessage.activities?.length > 0 ? (
                 <ActivityBody />
