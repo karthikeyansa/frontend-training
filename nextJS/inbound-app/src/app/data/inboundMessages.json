@@ -1,359 +1,645 @@
 [
-	{
-		"client_name": "Gary Johnson",
-		"client_email": "gary.johnson@yahoo.co",
-		"from_number": "+1 647 694 6835",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Amelia",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "1:35 PM",
-		"call_type": "All other calls",
-		"call_back_number": "(+44) 07707 453253",
-		"message": "He wants to know who does he talked to before. Caller is also interested in summer package.",
-		"state": "London",
-		"country": "UK",
-		"local_time": "6:36 AM",
-		"id": "39938489-39893rebjhed-3938939-ncdjvjd",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Sarah Thompson",
-		"client_email": "sarah.thompson@gmail.com",
-		"from_number": "+1 347 786 9982",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Jake",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "3:40 PM",
-		"call_type": "Product inquiry",
-		"call_back_number": "(+1) 415 345 6789",
-		"message": "She asked about the availability of spring deals.",
-		"state": "New York",
-		"country": "USA",
-		"local_time": "6:10 AM",
-		"id": "9da5b96d-9bae-480d-b51a-4387dfa34ea1",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Michael Brown",
-		"client_email": "michael.brown@outlook.com",
-		"from_number": "+44 7709 567890",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Sophia",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "4:00 PM",
-		"call_type": "Complaint",
-		"call_back_number": "(+44) 07709 567890",
-		"message": "Caller reported an issue with the winter package.",
-		"state": "London",
-		"country": "UK",
-		"local_time": "9:30 AM",
-		"id": "0f317187-2747-4547-8568-149bb00f9064",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Emily Davis",
-		"client_email": "emily.davis@hotmail.com",
-		"from_number": "+61 412 345 678",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Lucas",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "5:15 PM",
-		"call_type": "Feedback",
-		"call_back_number": "(+61) 0412 345 678",
-		"message": "Shared positive feedback about the autumn package.",
-		"state": "Sydney",
-		"country": "Australia",
-		"local_time": "10:45 PM",
-		"id": "5b77ba07-0222-4f33-83fe-479a1492bf95",
-		"tz": "IST"
-	},
-	{
-		"client_name": "David Wilson",
-		"client_email": "david.wilson@icloud.com",
-		"from_number": "+1 214 876 5432",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Emma",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "6:20 PM",
-		"call_type": "Cancellation",
-		"call_back_number": "(+1) 214 876 5432",
-		"message": "Requested cancellation of the spring package.",
-		"state": "Dallas",
-		"country": "USA",
-		"local_time": "8:50 AM",
-		"id": "3674d76f-430b-4d7f-8a18-3c87df9053f0",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Sophia Martinez",
-		"client_email": "sophia.martinez@yahoo.com",
-		"from_number": "+34 678 543 210",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Noah",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "7:35 PM",
-		"call_type": "General inquiry",
-		"call_back_number": "(+34) 678 543 210",
-		"message": "Asked about available holiday discounts.",
-		"state": "Madrid",
-		"country": "Spain",
-		"local_time": "3:05 PM",
-		"id": "756757b6-07e9-439f-b849-b4cfb2fb66ba",
-		"tz": "IST"
-	},
-	{
-		"client_name": "James Anderson",
-		"client_email": "james.anderson@live.com",
-		"from_number": "+44 7890 123456",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Isabella",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "8:45 PM",
-		"call_type": "Follow-up",
-		"call_back_number": "(+44) 07890 123456",
-		"message": "Wanted a follow-up on his previous inquiry.",
-		"state": "Manchester",
-		"country": "UK",
-		"local_time": "4:15 PM",
-		"id": "3b080602-c632-4e45-aa04-f61b7038793a",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Olivia Garcia",
-		"client_email": "olivia.garcia@gmail.com",
-		"from_number": "+33 612 345 678",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Ethan",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "9:55 PM",
-		"call_type": "All other calls",
-		"call_back_number": "(+33) 0612 345 678",
-		"message": "Requested more details on the family package.",
-		"state": "Paris",
-		"country": "France",
-		"local_time": "5:25 PM",
-		"id": "8f8c35aa-0d49-4452-b3d3-ce3f584d72338",
-		"tz": "IST"
-	},
-	{
-		"client_name": "William White",
-		"client_email": "william.white@yahoo.com",
-		"from_number": "+1 602 987 6543",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Mia",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "10:20 PM",
-		"call_type": "Complaint",
-		"call_back_number": "(+1) 602 987 6543",
-		"message": "Had an issue with the website booking system.",
-		"state": "Phoenix",
-		"country": "USA",
-		"local_time": "10:50 AM",
-		"id": "8f8c35aa-0d49-4452-b3d3-ce3f584d7268",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Emma Thomas",
-		"client_email": "emma.thomas@outlook.com",
-		"from_number": "+1 213 456 7890",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Ava",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "11:15 PM",
-		"call_type": "Feedback",
-		"call_back_number": "(+1) 213 456 7890",
-		"message": "Appreciated the quick response to her issue.",
-		"state": "Los Angeles",
-		"country": "USA",
-		"local_time": "11:45 AM",
-		"id": "6f017d0d-5d66-4477-8d43-b8fcd8cdc9b7",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Liam Taylor",
-		"client_email": "liam.taylor@icloud.com",
-		"from_number": "+49 172 345 6789",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Charlotte",
-		"answered_date": "1 Apr 2023",
-		"answered_time": "11:40 PM",
-		"call_type": "General inquiry",
-		"call_back_number": "(+49) 0172 345 6789",
-		"message": "Inquired about payment methods.",
-		"state": "Berlin",
-		"country": "Germany",
-		"local_time": "8:10 PM",
-		"id": "fdcf45ec-3d78-418c-b14b-3235aa05c552",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Isabella Lee",
-		"client_email": "isabella.lee@gmail.com",
-		"from_number": "+1 305 123 4567",
-		"to_number": "+1 866 776 9880",
-		"cam_agent_name": "Elijah",
-		"answered_date": "2 Apr 2023",
-		"answered_time": "12:05 AM",
-		"call_type": "Follow-up",
-		"call_back_number": "(+1) 305 123 4567",
-		"message": "Followed up on the group booking status.",
-		"state": "Miami",
-		"country": "USA",
-		"local_time": "12:35 PM",
-		"id": "f15bcaac-ee91-4a50-af15-d95dda5c6c57",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Sophia Carter",
-		"client_email": "sophia.carter@example.com",
-		"from_number": "+1 212 567 8910",
-		"to_number": "+1 800 234 5678",
-		"cam_agent_name": "Liam",
-		"answered_date": "3 Apr 2023",
-		"answered_time": "10:15 AM",
-		"call_type": "Follow-up",
-		"call_back_number": "(+1) 212 567 8910",
-		"message": "Followed up on the hotel booking confirmation.",
-		"state": "New York",
-		"country": "USA",
-		"local_time": "9:50 AM",
-		"id": "a2dbb7a1-57b8-4db2-9c8d-1d4a7f1e7a79",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Liam Brown",
-		"client_email": "liam.brown@example.com",
-		"from_number": "+1 323 777 4444",
-		"to_number": "+1 877 555 1234",
-		"cam_agent_name": "Olivia",
-		"answered_date": "4 Apr 2023",
-		"answered_time": "4:50 PM",
-		"call_type": "Inquiry",
-		"call_back_number": "(+1) 323 777 4444",
-		"message": "Inquired about the group tour options for May.",
-		"state": "Los Angeles",
-		"country": "USA",
-		"local_time": "6:00 AM",
-		"id": "c6dfc51b-e716-4b9b-b1db-b8d7957ff41d",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Emily Johnson",
-		"client_email": "emily.johnson@example.com",
-		"from_number": "+1 415 908 2233",
-		"to_number": "+1 888 678 1122",
-		"cam_agent_name": "James",
-		"answered_date": "5 Apr 2023",
-		"answered_time": "2:25 PM",
-		"call_type": "Follow-up",
-		"call_back_number": "(+1) 415 908 2233",
-		"message": "Followed up on the booking request for the weekend getaway.",
-		"state": "San Francisco",
-		"country": "USA",
-		"local_time": "4:30 PM",
-		"id": "e572f4f4-cfb0-4f12-9b7d-4db8b395aaf3",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Mia Davis",
-		"client_email": "mia.davis@example.com",
-		"from_number": "+1 305 123 5678",
-		"to_number": "+1 800 555 4321",
-		"cam_agent_name": "Ethan",
-		"answered_date": "6 Apr 2023",
-		"answered_time": "1:10 PM",
-		"call_type": "Inquiry",
-		"call_back_number": "(+1) 305 123 5678",
-		"message": "Asked for more details on group discount packages.",
-		"state": "Miami",
-		"country": "USA",
-		"local_time": "10:30 AM",
-		"id": "b28e4ff2-df8f-44e4-b1cd-7f67d4d4fe7b",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Noah Williams",
-		"client_email": "noah.williams@example.com",
-		"from_number": "+1 404 234 5678",
-		"to_number": "+1 877 345 6789",
-		"cam_agent_name": "Ava",
-		"answered_date": "7 Apr 2023",
-		"answered_time": "11:40 PM",
-		"call_type": "Follow-up",
-		"call_back_number": "(+1) 404 234 5678",
-		"message": "Followed up on the custom itinerary request for summer vacation.",
-		"state": "Atlanta",
-		"country": "USA",
-		"local_time": "2:00 PM",
-		"id": "4e52866b-193a-44c3-92b1-08a8cd42a3bb",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Chloe Taylor",
-		"client_email": "chloe.taylor@example.com",
-		"from_number": "+1 510 555 7766",
-		"to_number": "+1 800 999 5555",
-		"cam_agent_name": "Ethan",
-		"answered_date": "8 Apr 2023",
-		"answered_time": "6:25 AM",
-		"call_type": "Inquiry",
-		"call_back_number": "(+1) 510 555 7766",
-		"message": "Asked about package deals for a family trip to Europe.",
-		"state": "Oakland",
-		"country": "USA",
-		"local_time": "7:00 AM",
-		"id": "fe63c0f7-2a25-4ac5-9f7c-c6da3c1db357",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Aiden Scott",
-		"client_email": "aiden.scott@example.com",
-		"from_number": "+1 631 789 4567",
-		"to_number": "+1 855 232 7890",
-		"cam_agent_name": "Mia",
-		"answered_date": "9 Apr 2023",
-		"answered_time": "3:30 PM",
-		"call_type": "Follow-up",
-		"call_back_number": "(+1) 631 789 4567",
-		"message": "Followed up on the wedding venue inquiry.",
-		"state": "Long Island",
-		"country": "USA",
-		"local_time": "8:00 AM",
-		"id": "0fc5f420-4f6f-4f3d-93d9-d07c26f9d053",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Lucas Moore",
-		"client_email": "lucas.moore@example.com",
-		"from_number": "+1 702 321 6549",
-		"to_number": "+1 866 444 8989",
-		"cam_agent_name": "Isabella",
-		"answered_date": "10 Apr 2023",
-		"answered_time": "5:10 PM",
-		"call_type": "Inquiry",
-		"call_back_number": "(+1) 702 321 6549",
-		"message": "Inquired about availability for a business conference in June.",
-		"state": "Las Vegas",
-		"country": "USA",
-		"local_time": "9:00 AM",
-		"id": "e091fa57-e58c-4266-8809-90a070d3aef9",
-		"tz": "IST"
-	},
-	{
-		"client_name": "Madison Green",
-		"client_email": "madison.green@example.com",
-		"from_number": "+1 617 456 7890",
-		"to_number": "+1 888 999 2222",
-		"cam_agent_name": "Ethan",
-		"answered_date": "11 Apr 2023",
-		"answered_time": "12:40 AM",
-		"call_type": "Follow-up",
-		"call_back_number": "(+1) 617 456 7890",
-		"message": "Followed up on the flight ticket booking for a group of 10.",
-		"state": "Boston",
-		"country": "USA",
-		"local_time": "3:00 PM",
-		"id": "678f7e6b-4587-4e0c-a0fa-370dcd6c73f1",
-		"tz": "IST"
-	}
+  {
+    "client_name": "Gary Johnson",
+    "client_email": "gary.johnson@yahoo.co",
+    "from_number": "+1 647 694 6835",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Amelia",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "1:35 PM",
+    "call_type": "All other calls",
+    "call_back_number": "(+44) 07707 453253",
+    "message": "He wants to know who does he talked to before. Caller is also interested in summer package.",
+    "state": "London",
+    "country": "UK",
+    "local_time": "6:36 AM",
+    "id": "39938489-39893rebjhed-3938939-ncdjvjd",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "99112233-aabbccdd-eeffgghh-iijjkkll",
+        "provider_name": "mia",
+        "provider_message": "The project proposal has been sent. Let me know your feedback.",
+        "created_time": "05 Aug 2024"
+      },
+      {
+        "id": "55447788-mmnnbbvv-ccxxzzqq-wwrreett",
+        "provider_name": "noah",
+        "provider_message": "I've completed the assigned task. Please verify.",
+        "created_time": "10 Aug 2024"
+      },
+      {
+        "id": "66778899-ppoollkk-jjhhggff-ddssaaqq",
+        "provider_name": "olivia",
+        "provider_message": "Reminder: The deadline for the submission is tomorrow.",
+        "created_time": "15 Aug 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Sarah Thompson",
+    "client_email": "sarah.thompson@gmail.com",
+    "from_number": "+1 347 786 9982",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Jake",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "3:40 PM",
+    "call_type": "Product inquiry",
+    "call_back_number": "(+1) 415 345 6789",
+    "message": "She asked about the availability of spring deals.",
+    "state": "New York",
+    "country": "USA",
+    "local_time": "6:10 AM",
+    "id": "9da5b96d-9bae-480d-b51a-4387dfa34ea1",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "33221144-qqwwreet-yyuuiioo-ppaasdfg",
+        "provider_name": "peter",
+        "provider_message": "I've scheduled a meeting for next Monday. Check your calendar.",
+        "created_time": "20 Aug 2024"
+      },
+      {
+        "id": "99887744-zzxxccvv-bbnnmmll-kkooppqq",
+        "provider_name": "quinn",
+        "provider_message": "The files have been uploaded to the shared drive.",
+        "created_time": "25 Aug 2024"
+      },
+      {
+        "id": "11225566-wwffeedd-ggyyhhjj-kkllmmnn",
+        "provider_name": "rachel",
+        "provider_message": "Can we have a quick call to discuss the issue?",
+        "created_time": "30 Aug 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Michael Brown",
+    "client_email": "michael.brown@outlook.com",
+    "from_number": "+44 7709 567890",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Sophia",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "4:00 PM",
+    "call_type": "Complaint",
+    "call_back_number": "(+44) 07709 567890",
+    "message": "Caller reported an issue with the winter package.",
+    "state": "London",
+    "country": "UK",
+    "local_time": "9:30 AM",
+    "id": "0f317187-2747-4547-8568-149bb00f9064",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "00998877-mmlkkjhh-ggffddss-aappqqww",
+        "provider_name": "sam",
+        "provider_message": "The report is ready for review.",
+        "created_time": "05 Sep 2024"
+      },
+      {
+        "id": "44556633-zxcvbnmasd-qwertyuiop-lkjhgfdsa",
+        "provider_name": "tina",
+        "provider_message": "Please approve the budget request at your earliest convenience.",
+        "created_time": "10 Sep 2024"
+      },
+      {
+        "id": "77665544-qazwsxedc-rfvtgbyhn-ujmikolp",
+        "provider_name": "umar",
+        "provider_message": "The server maintenance is scheduled for this weekend.",
+        "created_time": "15 Sep 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Emily Davis",
+    "client_email": "emily.davis@hotmail.com",
+    "from_number": "+61 412 345 678",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Lucas",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "5:15 PM",
+    "call_type": "Feedback",
+    "call_back_number": "(+61) 0412 345 678",
+    "message": "Shared positive feedback about the autumn package.",
+    "state": "Sydney",
+    "country": "Australia",
+    "local_time": "10:45 PM",
+    "id": "5b77ba07-0222-4f33-83fe-479a1492bf95",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "22334411-qqwwreet-yyuuiioo-ppaasdfg",
+        "provider_name": "victor",
+        "provider_message": "I have shared the latest design mockups.",
+        "created_time": "20 Sep 2024"
+      },
+      {
+        "id": "55667722-zzxxccvv-bbnnmmll-kkooppqq",
+        "provider_name": "willow",
+        "provider_message": "Don't forget to complete the survey before the deadline.",
+        "created_time": "25 Sep 2024"
+      },
+      {
+        "id": "88990077-aabbccdd-eeffgghh-iijjkkll",
+        "provider_name": "xavier",
+        "provider_message": "The deployment was successful. Please verify on your end.",
+        "created_time": "30 Sep 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "David Wilson",
+    "client_email": "david.wilson@icloud.com",
+    "from_number": "+1 214 876 5432",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Emma",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "6:20 PM",
+    "call_type": "Cancellation",
+    "call_back_number": "(+1) 214 876 5432",
+    "message": "Requested cancellation of the spring package.",
+    "state": "Dallas",
+    "country": "USA",
+    "local_time": "8:50 AM",
+    "id": "3674d76f-430b-4d7f-8a18-3c87df9053f0",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "33221199-mmlkkjhh-ggffddss-aappqqww",
+        "provider_name": "yasmin",
+        "provider_message": "The client presentation has been rescheduled to next Friday.",
+        "created_time": "05 Oct 2024"
+      },
+      {
+        "id": "66558833-zxcvbnmasd-qwertyuiop-lkjhgfdsa",
+        "provider_name": "zane",
+        "provider_message": "Please review the updated terms and conditions document.",
+        "created_time": "10 Oct 2024"
+      },
+      {
+        "id": "99887755-qazwsxedc-rfvtgbyhn-ujmikolp",
+        "provider_name": "alex",
+        "provider_message": "Let’s finalize the agenda for the upcoming workshop.",
+        "created_time": "15 Oct 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Sophia Martinez",
+    "client_email": "sophia.martinez@yahoo.com",
+    "from_number": "+34 678 543 210",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Noah",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "7:35 PM",
+    "call_type": "General inquiry",
+    "call_back_number": "(+34) 678 543 210",
+    "message": "Asked about available holiday discounts.",
+    "state": "Madrid",
+    "country": "Spain",
+    "local_time": "3:05 PM",
+    "id": "756757b6-07e9-439f-b849-b4cfb2fb66ba",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "11112233-aaaacccc-eeeeffff-gggghhhh",
+        "provider_name": "karen",
+        "provider_message": "The security patch has been applied. Please verify.",
+        "created_time": "05 Dec 2024"
+      },
+      {
+        "id": "22223344-iiiiiiii-jjjjjjjj-kkkkkkkk",
+        "provider_name": "leo",
+        "provider_message": "Meeting notes have been shared. Let me know if you have any questions.",
+        "created_time": "10 Dec 2024"
+      },
+      {
+        "id": "33334455-llllmmmm-nnnnoooo-ppppqqqq",
+        "provider_name": "mia",
+        "provider_message": "I've finalized the design assets. You can review them now.",
+        "created_time": "15 Dec 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "James Anderson",
+    "client_email": "james.anderson@live.com",
+    "from_number": "+44 7890 123456",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Isabella",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "8:45 PM",
+    "call_type": "Follow-up",
+    "call_back_number": "(+44) 07890 123456",
+    "message": "Wanted a follow-up on his previous inquiry.",
+    "state": "Manchester",
+    "country": "UK",
+    "local_time": "4:15 PM",
+    "id": "3b080602-c632-4e45-aa04-f61b7038793a",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "77889900-sssstttt-uuuuvvvv-wwwwxxxx",
+        "provider_name": "harry",
+        "provider_message": "Let's schedule a brainstorming session for next week.",
+        "created_time": "20 Nov 2024"
+      },
+      {
+        "id": "88990011-yyyyzzzz-11112222-33334444",
+        "provider_name": "isla",
+        "provider_message": "I've updated the project timeline. Please review.",
+        "created_time": "25 Nov 2024"
+      },
+      {
+        "id": "99001122-55556666-77778888-99990000",
+        "provider_name": "jason",
+        "provider_message": "Don't forget to submit your monthly report.",
+        "created_time": "30 Nov 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Olivia Garcia",
+    "client_email": "olivia.garcia@gmail.com",
+    "from_number": "+33 612 345 678",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Ethan",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "9:55 PM",
+    "call_type": "All other calls",
+    "call_back_number": "(+33) 0612 345 678",
+    "message": "Requested more details on the family package.",
+    "state": "Paris",
+    "country": "France",
+    "local_time": "5:25 PM",
+    "id": "8f8c35aa-0d49-4452-b3d3-ce3f584d72338",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "44556677-aaaabbbb-ccccdddd-eeeeffff",
+        "provider_name": "ella",
+        "provider_message": "Can you confirm the details for tomorrow's meeting?",
+        "created_time": "05 Nov 2024"
+      },
+      {
+        "id": "55667788-gggghhhh-iiiijjjj-kkkkllll",
+        "provider_name": "felix",
+        "provider_message": "I've uploaded the latest financial report.",
+        "created_time": "10 Nov 2024"
+      },
+      {
+        "id": "66778899-mmmmnnnn-oooopppp-qqqqrrrr",
+        "provider_name": "georgia",
+        "provider_message": "The issue has been resolved. Please check and confirm.",
+        "created_time": "15 Nov 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "William White",
+    "client_email": "william.white@yahoo.com",
+    "from_number": "+1 602 987 6543",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Mia",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "10:20 PM",
+    "call_type": "Complaint",
+    "call_back_number": "(+1) 602 987 6543",
+    "message": "Had an issue with the website booking system.",
+    "state": "Phoenix",
+    "country": "USA",
+    "local_time": "10:50 AM",
+    "id": "8f8c35aa-0d49-4452-b3d3-ce3f584d7268",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "11223344-aaabbbccc-dddeeefff-ggghhhiii",
+        "provider_name": "ben",
+        "provider_message": "I’ve shared the draft document for review.",
+        "created_time": "20 Oct 2024"
+      },
+      {
+        "id": "22334455-jjjkkklll-mmmnnnooo-pppqqqrrr",
+        "provider_name": "chloe",
+        "provider_message": "The new feature has been deployed. Please test it.",
+        "created_time": "25 Oct 2024"
+      },
+      {
+        "id": "33445566-ssstttuuu-vvvwwwxxx-yyyzzz111",
+        "provider_name": "derek",
+        "provider_message": "Reminder: The training session starts in one hour.",
+        "created_time": "30 Oct 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Emma Thomas",
+    "client_email": "emma.thomas@outlook.com",
+    "from_number": "+1 213 456 7890",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Ava",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "11:15 PM",
+    "call_type": "Feedback",
+    "call_back_number": "(+1) 213 456 7890",
+    "message": "Appreciated the quick response to her issue.",
+    "state": "Los Angeles",
+    "country": "USA",
+    "local_time": "11:45 AM",
+    "id": "6f017d0d-5d66-4477-8d43-b8fcd8cdc9b7",
+    "tz": "IST"
+  },
+  {
+    "client_name": "Liam Taylor",
+    "client_email": "liam.taylor@icloud.com",
+    "from_number": "+49 172 345 6789",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Charlotte",
+    "answered_date": "1 Apr 2023",
+    "answered_time": "11:40 PM",
+    "call_type": "General inquiry",
+    "call_back_number": "(+49) 0172 345 6789",
+    "message": "Inquired about payment methods.",
+    "state": "Berlin",
+    "country": "Germany",
+    "local_time": "8:10 PM",
+    "id": "fdcf45ec-3d78-418c-b14b-3235aa05c552",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "44445566-rrrrssss-ttttuuuu-vvvvwwww",
+        "provider_name": "nathan",
+        "provider_message": "The contract has been signed and uploaded.",
+        "created_time": "20 Dec 2024"
+      },
+      {
+        "id": "55556677-xxxxyyyy-zzzz1111-22223333",
+        "provider_name": "olivia",
+        "provider_message": "Please complete your pending tasks before the weekend.",
+        "created_time": "25 Dec 2024"
+      },
+      {
+        "id": "66667788-44445555-66667777-88889999",
+        "provider_name": "peter",
+        "provider_message": "Our weekly team sync has been rescheduled to Friday.",
+        "created_time": "30 Dec 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Isabella Lee",
+    "client_email": "isabella.lee@gmail.com",
+    "from_number": "+1 305 123 4567",
+    "to_number": "+1 866 776 9880",
+    "cam_agent_name": "Elijah",
+    "answered_date": "2 Apr 2023",
+    "answered_time": "12:05 AM",
+    "call_type": "Follow-up",
+    "call_back_number": "(+1) 305 123 4567",
+    "message": "Followed up on the group booking status.",
+    "state": "Miami",
+    "country": "USA",
+    "local_time": "12:35 PM",
+    "id": "f15bcaac-ee91-4a50-af15-d95dda5c6c57",
+    "tz": "IST"
+  },
+  {
+    "client_name": "Sophia Carter",
+    "client_email": "sophia.carter@example.com",
+    "from_number": "+1 212 567 8910",
+    "to_number": "+1 800 234 5678",
+    "cam_agent_name": "Liam",
+    "answered_date": "3 Apr 2023",
+    "answered_time": "10:15 AM",
+    "call_type": "Follow-up",
+    "call_back_number": "(+1) 212 567 8910",
+    "message": "Followed up on the hotel booking confirmation.",
+    "state": "New York",
+    "country": "USA",
+    "local_time": "9:50 AM",
+    "id": "a2dbb7a1-57b8-4db2-9c8d-1d4a7f1e7a79",
+    "tz": "IST"
+  },
+  {
+    "client_name": "Liam Brown",
+    "client_email": "liam.brown@example.com",
+    "from_number": "+1 323 777 4444",
+    "to_number": "+1 877 555 1234",
+    "cam_agent_name": "Olivia",
+    "answered_date": "4 Apr 2023",
+    "answered_time": "4:50 PM",
+    "call_type": "Inquiry",
+    "call_back_number": "(+1) 323 777 4444",
+    "message": "Inquired about the group tour options for May.",
+    "state": "Los Angeles",
+    "country": "USA",
+    "local_time": "6:00 AM",
+    "id": "c6dfc51b-e716-4b9b-b1db-b8d7957ff41d",
+    "tz": "IST"
+  },
+  {
+    "client_name": "Emily Johnson",
+    "client_email": "emily.johnson@example.com",
+    "from_number": "+1 415 908 2233",
+    "to_number": "+1 888 678 1122",
+    "cam_agent_name": "James",
+    "answered_date": "5 Apr 2023",
+    "answered_time": "2:25 PM",
+    "call_type": "Follow-up",
+    "call_back_number": "(+1) 415 908 2233",
+    "message": "Followed up on the booking request for the weekend getaway.",
+    "state": "San Francisco",
+    "country": "USA",
+    "local_time": "4:30 PM",
+    "id": "e572f4f4-cfb0-4f12-9b7d-4db8b395aaf3",
+    "tz": "IST"
+  },
+  {
+    "client_name": "Mia Davis",
+    "client_email": "mia.davis@example.com",
+    "from_number": "+1 305 123 5678",
+    "to_number": "+1 800 555 4321",
+    "cam_agent_name": "Ethan",
+    "answered_date": "6 Apr 2023",
+    "answered_time": "1:10 PM",
+    "call_type": "Inquiry",
+    "call_back_number": "(+1) 305 123 5678",
+    "message": "Asked for more details on group discount packages.",
+    "state": "Miami",
+    "country": "USA",
+    "local_time": "10:30 AM",
+    "id": "b28e4ff2-df8f-44e4-b1cd-7f67d4d4fe7b",
+    "tz": "IST"
+  },
+  {
+    "client_name": "Noah Williams",
+    "client_email": "noah.williams@example.com",
+    "from_number": "+1 404 234 5678",
+    "to_number": "+1 877 345 6789",
+    "cam_agent_name": "Ava",
+    "answered_date": "7 Apr 2023",
+    "answered_time": "11:40 PM",
+    "call_type": "Follow-up",
+    "call_back_number": "(+1) 404 234 5678",
+    "message": "Followed up on the custom itinerary request for summer vacation.",
+    "state": "Atlanta",
+    "country": "USA",
+    "local_time": "2:00 PM",
+    "id": "4e52866b-193a-44c3-92b1-08a8cd42a3bb",
+    "tz": "IST"
+  },
+  {
+    "client_name": "Chloe Taylor",
+    "client_email": "chloe.taylor@example.com",
+    "from_number": "+1 510 555 7766",
+    "to_number": "+1 800 999 5555",
+    "cam_agent_name": "Ethan",
+    "answered_date": "8 Apr 2023",
+    "answered_time": "6:25 AM",
+    "call_type": "Inquiry",
+    "call_back_number": "(+1) 510 555 7766",
+    "message": "Asked about package deals for a family trip to Europe.",
+    "state": "Oakland",
+    "country": "USA",
+    "local_time": "7:00 AM",
+    "id": "fe63c0f7-2a25-4ac5-9f7c-c6da3c1db357",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "77889900-lkjhgfdsa-mnbvcxzpo-oiuytrewq",
+        "provider_name": "jack",
+        "provider_message": "I've updated the task status. Please review.",
+        "created_time": "15 Jul 2024"
+      },
+      {
+        "id": "44556677-qazwsxedc-rfvtgbyhn-ujmikolp",
+        "provider_name": "kate",
+        "provider_message": "Don't forget to submit your feedback by EOD.",
+        "created_time": "22 Jul 2024"
+      },
+      {
+        "id": "22334455-zxcvbnmasd-qwertyuiop-lkjhgfdsa",
+        "provider_name": "leo",
+        "provider_message": "The meeting notes are now available. Check them out.",
+        "created_time": "01 Aug 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Aiden Scott",
+    "client_email": "aiden.scott@example.com",
+    "from_number": "+1 631 789 4567",
+    "to_number": "+1 855 232 7890",
+    "cam_agent_name": "Mia",
+    "answered_date": "9 Apr 2023",
+    "answered_time": "3:30 PM",
+    "call_type": "Follow-up",
+    "call_back_number": "(+1) 631 789 4567",
+    "message": "Followed up on the wedding venue inquiry.",
+    "state": "Long Island",
+    "country": "USA",
+    "local_time": "8:00 AM",
+    "id": "0fc5f420-4f6f-4f3d-93d9-d07c26f9d053",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "11224477-aabbccdd-eeffgghh-iijjkkll",
+        "provider_name": "grace",
+        "provider_message": "I've shared the updated files. Let me know your thoughts.",
+        "created_time": "18 Jun 2024"
+      },
+      {
+        "id": "66558899-qqwwreet-yyuuiioo-ppaasdfg",
+        "provider_name": "henry",
+        "provider_message": "Can you confirm the schedule for next week?",
+        "created_time": "30 Jun 2024"
+      },
+      {
+        "id": "99881122-zxcasdqwe-rfvtgbyhn-ujmiklop",
+        "provider_name": "isabella",
+        "provider_message": "The bug has been fixed, please verify on your end.",
+        "created_time": "10 Jul 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Lucas Moore",
+    "client_email": "lucas.moore@example.com",
+    "from_number": "+1 702 321 6549",
+    "to_number": "+1 866 444 8989",
+    "cam_agent_name": "Isabella",
+    "answered_date": "10 Apr 2023",
+    "answered_time": "5:10 PM",
+    "call_type": "Inquiry",
+    "call_back_number": "(+1) 702 321 6549",
+    "message": "Inquired about availability for a business conference in June.",
+    "state": "Las Vegas",
+    "country": "USA",
+    "local_time": "9:00 AM",
+    "id": "e091fa57-e58c-4266-8809-90a070d3aef9",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "55667788-zzxxccvv-bbnnmmll-kkooppqq",
+        "provider_name": "david",
+        "provider_message": "Please check the latest report I uploaded.",
+        "created_time": "10 Apr 2024"
+      },
+      {
+        "id": "99887766-yywwuutt-rrssddff-gghhjjkk",
+        "provider_name": "emily",
+        "provider_message": "Great job on the presentation! Well done.",
+        "created_time": "25 May 2024"
+      },
+      {
+        "id": "33445566-ppoollkk-jjhhggff-ddssaaqq",
+        "provider_name": "frank",
+        "provider_message": "Let's schedule a call to discuss further details.",
+        "created_time": "05 Jun 2024"
+      }
+    ]
+  },
+  {
+    "client_name": "Madison Green",
+    "client_email": "madison.green@example.com",
+    "from_number": "+1 617 456 7890",
+    "to_number": "+1 888 999 2222",
+    "cam_agent_name": "Ethan",
+    "answered_date": "11 Apr 2023",
+    "answered_time": "12:40 AM",
+    "call_type": "Follow-up",
+    "call_back_number": "(+1) 617 456 7890",
+    "message": "Followed up on the flight ticket booking for a group of 10.",
+    "state": "Boston",
+    "country": "USA",
+    "local_time": "3:00 PM",
+    "id": "678f7e6b-4587-4e0c-a0fa-370dcd6c73f1",
+    "tz": "IST",
+    "activities": [
+      {
+        "id": "03349900-493993940-30393993-99393",
+        "provider_name": "madhav",
+        "provider_message": "Hello check out the links I've shared",
+        "created_time": "11 Apr 2023"
+      },
+      {
+        "id": "12345678-abcdefgh-ijklmnop-qrstuvwx",
+        "provider_name": "alice",
+        "provider_message": "Here is the document you requested.",
+        "created_time": "05 Jan 2024"
+      },
+      {
+        "id": "87654321-hgfedcba-ponmlkji-xwvutsrq",
+        "provider_name": "bob",
+        "provider_message": "Reminder: Meeting scheduled for tomorrow at 10 AM.",
+        "created_time": "15 Feb 2024"
+      },
+      {
+        "id": "11223344-aabbccdd-eeffgghh-iijjkkll",
+        "provider_name": "charlie",
+        "provider_message": "I've updated the project details. Please review.",
+        "created_time": "20 Mar 2024"
+      }
+    ]
+  }
 ]
