@@ -50,6 +50,8 @@ export default function AddNoteModal() {
           messageId: messageContextValue.selectedMessage?.id,
         })
       );
+      setNotes("");
+      setNotesProviderName("");
     }
     onModalClose();
   }
