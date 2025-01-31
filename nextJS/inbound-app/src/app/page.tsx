@@ -11,15 +11,16 @@ import ContactFooter from "./components/contactDetails/contactBody/ContactFooter
 import { MessageContext } from "./components/MessageContextProvider";
 import ActivityHeader from "./components/activities/ActivityHeader";
 import ActivityBody from "./components/activities/ActivityBody";
+import { addMessages, addToReadMessages, selectMessage } from "@/app/redux/features/message-slice";
+import { useDispatch } from "react-redux";
+import { AppDispatch, useAppSelector } from "./redux/store";
 
 export default function Home() {
-  const [messages, setMessages] = useState<MessageType[]>([]);
-  const [selectedMessage, setSelectedMessage] = useState<MessageType | null>(
-    null
-  );
-  const [readMessages, setReadMessages] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [searchMessages, setSearchMessages] = useState<MessageType[]>([]);
+
+  const dispatch = useDispatch<AppDispatch>();
+  const messages = useAppSelector((state) => state.messageReducer.messageList);
+  const selectedMessage = useAppSelector((state) => state.messageReducer.selectedMessage);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,34 +30,24 @@ export default function Home() {
             resolve([...mockMessageData]);
           }, 10)
       );
-      setMessages(mockResponse);
+      dispatch(addMessages(mockResponse));
     };
 
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    if (messages.length) {
-      setSelectedMessage(messages[0]);
-      setReadMessages((prevState: string[]) =>
-        !prevState.includes(messages[0].id)
-          ? [...prevState, messages[0].id]
-          : prevState
-      );
+    if(messages.length){
+      dispatch(selectMessage(messages[0]));
+      dispatch(addToReadMessages(messages[0].id));
+    } else {
+      fetchData();
     }
   }, [messages]);
+
   return (
     <MessageContext.Provider
       value={{
         messages,
         selectedMessage,
-        setSelectedMessage,
         searchQuery,
         setSearchQuery,
-        searchMessages,
-        setSearchMessages,
-        readMessages,
-        setReadMessages,
       }}
     >
       <Box className="flex">

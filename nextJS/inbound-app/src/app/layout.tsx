@@ -2,6 +2,7 @@ import "./globals.css";
 import { Root } from "@adaptavant/eds-core";
 import brand from "@adaptavant/eds-brands/setmore";
 import translations from "@adaptavant/eds-translations/english";
+import { ReduxProvider } from "@/app/redux/Provider";
 
 export default function RootLayout({
   children,
@@ -17,7 +18,9 @@ export default function RootLayout({
       </head>
       <body>
         <Root brand={brand} colorScheme="light" translations={translations}>
-          {children}
+          <ReduxProvider>
+              {children}
+          </ReduxProvider>
         </Root>
       </body>
     </html>

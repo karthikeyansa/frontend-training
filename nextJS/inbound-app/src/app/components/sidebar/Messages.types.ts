@@ -28,17 +28,11 @@ export type MessageType = {
 
 export type InboxHeaderComponentType = {
   setSearchQuery: (prevState: "") => void;
-  setSearchMessages: (prevState: Array<MessageType>) => void;
 };
 
 export type MessageContextProviderTypes = {
   messages: Array<MessageType>;
   searchQuery: string;
   setSearchQuery: (value: string) => void;
-  searchMessages: Array<MessageType>;
-  setSearchMessages: (value: Array<MessageType>) => void;
   selectedMessage: MessageType | null;
-  setSelectedMessage: (value: MessageType) => void;
-  readMessages: Array<string>;
-  setReadMessages: React.Dispatch<React.SetStateAction<string[]>>;
 };

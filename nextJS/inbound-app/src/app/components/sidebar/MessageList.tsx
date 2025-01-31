@@ -11,18 +11,23 @@ import { MessageType } from "./Messages.types";
 import { MessageContext } from "../MessageContextProvider";
 import classNames from "classnames";
 import { useContext, useMemo } from "react";
+import { useDispatch } from "react-redux";
+import { addToReadMessages, selectMessage } from "@/app/redux/features/message-slice";
+import { useAppSelector } from "@/app/redux/store";
 
 export default function MessageList(): React.JSX.Element {
   const messageContextValue = useContext(MessageContext);
+  const searchMessages = useAppSelector((state) => state.messageReducer.searchMessages);
+  const dispatch = useDispatch();
 
   const messageList = useMemo(() => {
     return messageContextValue.searchQuery.length
-      ? messageContextValue.searchMessages
+      ? searchMessages
       : messageContextValue.messages;
   }, [
     messageContextValue.searchQuery,
     messageContextValue.messages,
-    messageContextValue.searchMessages,
+    searchMessages,
   ]);
   return (
     <Box
@@ -34,12 +39,8 @@ export default function MessageList(): React.JSX.Element {
           <Box
             as="li"
             onClick={() => {
-              messageContextValue.setSelectedMessage(message);
-              messageContextValue.setReadMessages((prevState: string[]) =>
-                !prevState.includes(message.id)
-                  ? [...prevState, message.id]
-                  : prevState
-              );
+              dispatch(selectMessage(message));
+              dispatch(addToReadMessages(message.id));
             }}
             key={message.id}
             className={classNames("p-3", {
@@ -58,7 +59,7 @@ export default function MessageList(): React.JSX.Element {
         );
       })}
 
-      {messageContextValue.searchMessages.length === 0 &&
+      {searchMessages.length === 0 &&
         messageContextValue.searchQuery.length > 1 && (
           <Box as="li">
             <Text className="text-body-12 text-center py-[350px]">
@@ -75,8 +76,8 @@ function MessageContentComponent({
 }: {
   selectedMessage: MessageType;
 }): React.JSX.Element {
-  const messageContextValue = useContext(MessageContext);
-  const isMessageRead: boolean = messageContextValue.readMessages.includes(
+  const readMessages = useAppSelector((state) => state.messageReducer.readMessages);
+  const isMessageRead: boolean = readMessages.includes(
     selectedMessage.id
   );
   return (

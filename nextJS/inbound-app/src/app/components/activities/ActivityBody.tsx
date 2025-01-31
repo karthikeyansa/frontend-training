@@ -2,10 +2,12 @@ import { Box, NotesFilledIcon, Text, Track } from "@adaptavant/eds-core";
 import { useContext } from "react";
 import { MessageContext } from "../MessageContextProvider";
 import { ActivityType } from "../sidebar/Messages.types";
+import { useAppSelector } from "@/app/redux/store";
 
 export default function ActivityBody() {
   const messageListContext = useContext(MessageContext);
   const activityList = messageListContext.selectedMessage?.activities ?? [];
+
   return (
     <Box as="ul" className="p-3">
       {activityList?.map((activity: ActivityType) => (
